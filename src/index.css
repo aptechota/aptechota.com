@@ -1,3 +1,105 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+
+font-family: 'Cambay', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'Mulish', sans-serif;
+
+*/
+
+:root {
+  --animate-delay: 5s;
+}
+
+/* Global Styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Jost", sans-serif;
+}
+
+p,
+small,
+span,
+a {
+  font-family: "Mulish", sans-serif;
+  /* font-family: 'Cambay', sans-serif; */
+}
+
+/* Navbar */
+.navlink {
+  @apply text-md;
+}
+
+/* Home Carousel */
+
+.slide1 {
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.7) 20%,
+      rgba(0, 0, 0, 0.7) 80%
+    ),
+    url(./assets/images/banner1.jpg);
+}
+.slide2 {
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/banner2.jpg);
+}
+.slide3 {
+  background-position: top;
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/banner3.jpg);
+}
+
+/* Home Features */
+.features {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.feature-btn svg {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
+
+.feature-btn:hover svg {
+  transform: translateX(5px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
+
+/* Home popular Courses */
+.swiper-container {
+  overflow: hidden;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff !important;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: #fff !important;
+  }

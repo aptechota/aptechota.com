@@ -12,8 +12,16 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {},    
-    fontFamily: {},
+    extend: {    },  
+    colors: {
+      aptechRed: "#AD1E22",
+      aptechOrange: "#ddac26"
+    } ,     
+    fontFamily: {
+      cambay: ["Cambay", "sans-serif"],
+      jost: ["Jost", "sans-serif"],
+      mulish: ["Mulish", "sans-serif"],
+    },
     fontSize: {
       xs: ".75rem",
       sm: ".875rem",
