@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="mt-6 flex justify-center gap-4 text-gray-300 lg:justify-start">
               <a
                 className="transition hover:text-aptechOrange"
-                href="gg"
+                href="https://www.facebook.com/Aptech-Sango-ota-110209775063204v"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -38,7 +38,7 @@ const Footer = () => {
 
               <a
                 className="transition hover:text-aptechOrange"
-                href="g"
+                href="https://www.instagram.com/aptechsango/"
                 target="_blank"
                 rel="noreferrer"
               >

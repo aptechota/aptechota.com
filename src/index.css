@@ -37,7 +37,6 @@ a {
   @apply text-md;
 }
 
-
 /* 
 ===============================Home Page==========================
 */
@@ -113,12 +112,11 @@ a {
 ===============================Home Page==========================
 */
 
-
 /* 
 ===============================About Page==========================
 */
 
-.intro-banner {  
+.intro-banner {
   background-size: cover;
   background-image: linear-gradient(
       62deg,
@@ -130,4 +128,22 @@ a {
 
 /* 
 ===============================About Page==========================
+*/
+
+/* 
+===============================Contact Page==========================
+*/
+
+.input-field {
+  background-color: white;
+  padding: 0.625rem !important;
+  font-size: 15px;
+  @apply block w-full rounded-md bg-white p-2.5 text-md  font-medium text-gray-600 ring-2 ring-gray-400 placeholder:text-gray-500 focus:border-aptechRed focus:border-opacity-60 focus:ring-aptechRed !important;
+}
+
+.input-field.require-padding {
+  @apply pl-10 !important;
+}
+/* 
+===============================Contact Page==========================
 */

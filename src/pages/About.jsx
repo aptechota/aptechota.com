@@ -2,19 +2,17 @@ import React from "react";
 import AdvertImg1 from "../assets/images/advert1.jpg";
 import BusinessTeamImg from "../assets/images/office-workers.jpg";
 import StudentsImg from "../assets/images/students1.jpg";
+import IntroBanner from "../partials/IntroBanner";
 
 const About = () => {
   return (
     <div>
       {/* Intro Banner */}
-      <div className="intro-banner grid h-[75vh] content-center bg-gray-100 bg-center text-center text-white md:bg-right-top">
-        <h1 className="text-3xl font-medium sm:text-4xl">
-          About <span className="font-medium text-aptechOrange">Us</span>
-        </h1>
-        <p className="text-lg text-gray-200">
-          All About Aptech Computer Education Ota
-        </p>
-      </div>
+      <IntroBanner
+        bannerTitle="About"
+        bannerTitleYellow="Us"
+        bannerText="All About Aptech Computer Education Ota"
+      />
 
       {/* Feature 1 */}
       <section className="mt-20">
@@ -98,7 +96,7 @@ const About = () => {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
             <div className="lg:order-0 relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
               <img
-                className="pointer-events-none absolute inset-0 h-full w-full object-cover"
+                className="pointer-events-none absolute inset-0 h-full w-full  object-cover"
                 src={StudentsImg}
                 alt="Students"
               />

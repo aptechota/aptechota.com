@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx,html,css,scss}",
-    'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'
+    "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     screens: {
@@ -12,11 +12,11 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
-    extend: {    },  
+    extend: {},
     colors: {
       aptechRed: "#AD1E22",
-      aptechOrange: "#ddac26"
-    } ,     
+      aptechOrange: "#ddac26",
+    },
     fontFamily: {
       cambay: ["Cambay", "sans-serif"],
       jost: ["Jost", "sans-serif"],
@@ -36,9 +36,7 @@ module.exports = {
       "5xl": "3rem",
       "6xl": "4rem",
       "7xl": "5rem",
-    },    
+    },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
-}
+  plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],
+};

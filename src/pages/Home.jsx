@@ -162,7 +162,7 @@ const Home = () => {
 
           <div className="mt-4 text-center">
             <a
-              className="feature-btn mt-5 inline-flex items-center rounded bg-aptechRed px-6 py-3 text-white"
+              className="feature-btn mt-5 inline-flex items-center rounded bg-aptechRed px-6 py-3 text-white hover:shadow-md"
               href="/contact"
             >
               <span className="text-sm font-semibold"> Make Enquiry </span>
@@ -215,7 +215,7 @@ const Home = () => {
               </p>
 
               <a
-                className="feature-btn mt-6 inline-flex items-center rounded bg-aptechOrange px-6 py-3 text-black"
+                className="feature-btn mt-6 inline-flex items-center rounded bg-aptechOrange px-6 py-3 text-black hover:shadow-sm hover:shadow-gray-50"
                 href="/contact"
               >
                 <span className="text-sm font-bold"> Enroll Now </span>
@@ -297,7 +297,7 @@ const Home = () => {
           <div className="mt-8 text-center">
             <Link
               reloadDocument
-              className="feature-btn mt-5 inline-flex items-center rounded bg-aptechRed px-6 py-3 text-white"
+              className="feature-btn mt-5 inline-flex items-center rounded bg-aptechRed px-6 py-3 text-white hover:shadow-md"
               to="/courses"
             >
               <span className="text-sm font-semibold"> View Courses </span>
