@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import { Link } from "react-router-dom";
+
 import jumboImg from "../assets/images/jumboImg.jpg";
 import coursesAcnsImg from "../assets/images/course-acns.jpg";
 import coursesAdseImg from "../assets/images/course-adse.jpg";
@@ -100,12 +101,17 @@ const Home = () => {
     },
   ];
   return (
-    <div className="mt-14">
+    <div className="sm:mt-14">
       {/* Carousel */}
-      <div className="h-[85vh]">
-        <Carousel slideInterval={10000} slide={false}>
+      <div className="h-[70vh] sm:h-[85vh]">
+        <Carousel
+          slideInterval={10000}
+          slide={false}
+          rightControl=" "
+          leftControl=" "
+        >
           <div className="slide1 flex h-full cursor-default items-center justify-center capitalize text-white">
-            <h1 className="animate__animated animate__fadeInUp animate__delay-2s text-center text-3xl font-medium sm:text-5xl">
+            <h1 className="animate__animated animate__fadeInUp text-center text-3xl font-medium sm:text-5xl">
               Build your IT career{" "}
               <span className="font-semibold text-aptechOrange">with us</span>
             </h1>
@@ -251,7 +257,7 @@ const Home = () => {
             {popularCourses.map((course) => (
               <div
                 key={course.id}
-                className="relative block h-[50vh] overflow-hidden rounded-md bg-cover bg-center bg-no-repeat md:h-[70vh]"
+                className="relative block h-[45vh] overflow-hidden rounded-md bg-cover bg-center bg-no-repeat md:h-[70vh]"
                 style={{
                   backgroundImage: `linear-gradient(62deg,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0.2) 50%),url(${course.img})`,
                 }}
@@ -346,8 +352,8 @@ const Home = () => {
           Transformation Programs which include some of the Newest, Fastest
           growing Technologies aligned with Industry 4.0 like;
         </p>
-        <div className="grid-col-1 mx-auto mt-6 grid  gap-0 p-3 sm:w-5/6 md:grid-cols-2">
-          <div className="bg-gray-100 text-start">
+        <div className="grid-col-1 mx-auto mt-6 grid gap-y-2 p-3 sm:w-5/6 sm:gap-0 md:grid-cols-2">
+          <div className="bg-gray-200 text-start">
             <p className="p-2 px-4 text-base ">
               Power Business Intelligence (BI)
             </p>
@@ -359,7 +365,7 @@ const Home = () => {
               Digital Marketing (SEO, SEM, Mobile & Email Marketing, ORM)
             </p>
           </div>
-          <div className="bg-gray-100 text-start">
+          <div className="bg-gray-200 text-start">
             <p className="bg-gray-50 p-2 px-4 text-base">Block Chain</p>
             <p className="p-2 px-4 text-base ">Machine Learning with R</p>
             <p className="bg-gray-50 p-2 px-4 text-base">

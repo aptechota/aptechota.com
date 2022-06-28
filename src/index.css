@@ -37,6 +37,11 @@ a {
   @apply text-md;
 }
 
+
+/* 
+===============================Home Page==========================
+*/
+
 /* Home Carousel */
 
 .slide1 {
@@ -44,8 +49,8 @@ a {
   background-size: cover;
   background-image: linear-gradient(
       62deg,
-      rgba(0, 0, 0, 0.7) 20%,
-      rgba(0, 0, 0, 0.7) 80%
+      rgba(0, 0, 0, 0.5) 20%,
+      rgba(0, 0, 0, 0.6) 80%
     ),
     url(./assets/images/banner1.jpg);
 }
@@ -54,7 +59,7 @@ a {
   background-size: cover;
   background-image: linear-gradient(
       62deg,
-      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.5) 20%,
       rgba(0, 0, 0, 0.6) 80%
     ),
     url(./assets/images/banner2.jpg);
@@ -64,7 +69,7 @@ a {
   background-size: cover;
   background-image: linear-gradient(
       62deg,
-      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.5) 20%,
       rgba(0, 0, 0, 0.6) 80%
     ),
     url(./assets/images/banner3.jpg);
@@ -96,10 +101,33 @@ a {
   overflow: hidden;
 }
 
+/* Testimonials */
 .swiper-pagination-bullet-active {
-    background-color: #fff !important;
-  }
+  background-color: #fff !important;
+}
 
-  .swiper-pagination-bullet {
-    background-color: #fff !important;
-  }
+.swiper-pagination-bullet {
+  background-color: #fff !important;
+}
+/* 
+===============================Home Page==========================
+*/
+
+
+/* 
+===============================About Page==========================
+*/
+
+.intro-banner {  
+  background-size: cover;
+  background-image: linear-gradient(
+      62deg,
+      rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 80%
+    ),
+    url(./assets/images/intro-banner.jpg);
+}
+
+/* 
+===============================About Page==========================
+*/

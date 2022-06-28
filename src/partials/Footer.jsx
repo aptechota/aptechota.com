@@ -10,8 +10,12 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl px-4 pt-1 pb-4 sm:px-6 lg:px-8">
         <div className="mt-6 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20">
           <div className="mx-auto max-w-sm lg:max-w-none">
-            <span className="mx-auto w-fit block lg:ml-0">
-                <img src={AptechLogo} alt="Aptech Logo" className="h-14 pointer-events-none" />
+            <span className="mx-auto block w-fit lg:ml-0">
+              <img
+                src={AptechLogo}
+                alt="Aptech Logo"
+                className="pointer-events-none h-14"
+              />
             </span>
 
             <p className="mt-4 text-center text-white lg:w-5/6 lg:text-left lg:text-md">

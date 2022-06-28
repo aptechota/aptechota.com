@@ -14,7 +14,7 @@ const Nav = () => {
       <Navbar.Brand href="/">
         <img
           src={AptechLogo}
-          className="mr-3 h-6 sm:h-12 pointer-events-none"
+          className="pointer-events-none mr-3 h-6 sm:h-12"
           alt="Flowbite Logo"
         />
       </Navbar.Brand>
