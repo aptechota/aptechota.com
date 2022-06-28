@@ -85,19 +85,19 @@ const Home = () => {
       id: 1,
       title: "aptech ACNS career courses",
       img: coursesAcnsImg,
-      link: "/acns",
+      link: "acns",
     },
     {
       id: 2,
       title: "advanced diploma in software engineering (ADSE)",
       img: coursesAdseImg,
-      link: "/adse",
+      link: "adse",
     },
     {
       id: 3,
       title: "aptech smart professional courses",
       img: coursesSmartProImg,
-      link: "/smart-pro",
+      link: "smart-pro",
     },
   ];
   return (
@@ -264,7 +264,7 @@ const Home = () => {
               >
                 <Link
                   reloadDocument
-                  to="/courses"
+                  to={`/courses/${course.link}`}
                   className="absolute right-4 top-4 z-10 inline-flex items-center rounded-full bg-black px-3 py-1 text-xs font-semibold text-white"
                 >
                   Read More

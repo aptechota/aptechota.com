@@ -9,6 +9,10 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Courses from "./pages/Courses";
 
+import Adse from "./partials/courses/Adse";
+import Acns from "./partials/courses/Acns";
+import SmartPro from "./partials/courses/SmartPro";
+
 function App() {
   return (
     <div className="App ">
@@ -19,6 +23,9 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courses/adse" element={<Adse />} />
+          <Route path="/courses/acns" element={<Acns />} />
+          <Route path="/courses/smart-pro" element={<SmartPro />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>

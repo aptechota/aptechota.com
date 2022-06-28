@@ -2,7 +2,7 @@ import React from "react";
 import AdvertImg1 from "../assets/images/advert1.jpg";
 import BusinessTeamImg from "../assets/images/office-workers.jpg";
 import StudentsImg from "../assets/images/students1.jpg";
-import IntroBanner from "../partials/IntroBanner";
+import {IntroBanner} from "../partials/IntroBanner";
 
 const About = () => {
   return (
@@ -107,7 +107,7 @@ const About = () => {
                 Our Alliances
               </h2>
 
-              <p className="mt-2 text-gray-700">
+              <p className="mt-2 text-justify text-gray-700">
                 <span className="text-justify font-bold">
                   Avigo inculcates strict adherence to policies, procedures and
                   high standards on every task whose overall effect will result

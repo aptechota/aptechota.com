@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import IntroBanner from "../partials/IntroBanner";
+import {IntroBanner} from "../partials/IntroBanner";
 import { SiFacebook, SiInstagram, SiWhatsapp } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
 import { MdSend } from "react-icons/md";
