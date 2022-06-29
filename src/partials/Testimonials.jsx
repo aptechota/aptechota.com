@@ -33,7 +33,7 @@ const Testimonials = () => {
       id: 3,
       name: "Adejonwo Ayomide",
       quote:
-        "Being an adse students in aptech have help me improve my innovation in many fields, and acquinted me with job related skills.",
+        "Being an adse student at aptech ota has helped me improve my innovation in many fields, and acquainted me with job related skills.",
       image: student3Img,
       course: "ADSE",
     },
@@ -41,7 +41,7 @@ const Testimonials = () => {
       id: 4,
       name: "Akinoso Israel",
       quote:
-        "Being trained by a team of expert at aptech have helped me to graps the latest technonologies in the I.T industry and as well make me job ready for any industry.",
+        "Being trained by a team of experts at aptech ota has helped me to grasp the latest technonologies in the I.T industry and as well make me job ready for the I.T. industry.",
       image: student4Img,
       course: "ADSE",
     },
@@ -49,7 +49,7 @@ const Testimonials = () => {
       id: 5,
       name: "Oguntolu Esther",
       quote:
-        "Aptech gave me good a foundation I.T knowlege in programming , web development,Database Management that prepare me for any industrial work.",
+        "Aptech Ota gave me good a foundation I.T knowlege in programming, web development, database management that prepares me for any industrial work.",
       image: student5Img,
       course: "Resp. Web",
     },
@@ -57,14 +57,13 @@ const Testimonials = () => {
       id: 6,
       name: "Anthonio Amirat",
       quote:
-        "To be better at something, you need the right people and information-based environment. This and more are the reason why I choose aptech otta.",
+        "To be better at something, you need the right people and information-based environment. This and more are the reason why I choose Aptech ota.",
       image: student6Img,
       course: "Resp. Web",
     },
   ];
   return (
     <Swiper
-      // install Swiper modules
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       navigation
       loop={true}
@@ -95,7 +94,7 @@ const Testimonials = () => {
               </div>
 
               <p className="relative mt-4 text-center  text-gray-600 sm:text-start">
-                <span className="text-xl text-aptechOrange">&ldquo;</span>
+                <span className="text-xl text-aptechOrange">&ldquo;</span>{" "}
                 {student.quote}
                 <span className="text-xl text-aptechOrange">&rdquo;</span>
               </p>

@@ -19,9 +19,9 @@ const Footer = () => {
             </span>
 
             <p className="mt-4 text-center text-white lg:w-5/6 lg:text-left lg:text-md">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Praesentium natus quod eveniet aut perferendis distinctio iusto
-              repudiandae, provident velit earum?
+              IT is required in every industry. Today, the world is moving
+              towards automation of skills, an area in which IT is urgently
+              required. Enroll and get your skills now !!!
             </p>
 
             <div className="mt-6 flex justify-center gap-4 text-gray-300 lg:justify-start">

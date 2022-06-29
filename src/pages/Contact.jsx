@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import {IntroBanner} from "../partials/IntroBanner";
+import { IntroBanner } from "../partials/pageBanners";
 import { SiFacebook, SiInstagram, SiWhatsapp } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
 import { MdSend } from "react-icons/md";
@@ -141,7 +141,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="sm:inline-flex sm:shrink-0 sm:items-center"
               >
-                <SiFacebook className="h-6 w-6 text-aptechOrange" />
+                <SiFacebook className="h-6 w-6 text-aptechOrange transition-all hover:text-aptechRed" />
               </a>
 
               <a
@@ -150,7 +150,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="sm:inline-flex sm:shrink-0 sm:items-center"
               >
-                <SiInstagram className="h-6 w-6 text-aptechOrange" />
+                <SiInstagram className="h-6 w-6 text-aptechOrange transition-all hover:text-aptechRed" />
               </a>
 
               <a
@@ -159,7 +159,7 @@ const Contact = () => {
                 rel="noopener noreferrer"
                 className="sm:inline-flex sm:shrink-0 sm:items-center"
               >
-                <SiWhatsapp className="h-6 w-6 text-aptechOrange" />
+                <SiWhatsapp className="h-6 w-6 text-aptechOrange transition-all hover:text-aptechRed" />
               </a>
             </dl>
           </div>

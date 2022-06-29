@@ -1,5 +1,5 @@
 import React from "react";
-import {IntroBanner} from "../partials/IntroBanner";
+import { IntroBanner } from "../partials/pageBanners";
 import coursesAcnsImg from "../assets/images/course-acns.jpg";
 import coursesAdseImg from "../assets/images/course-adse.jpg";
 import coursesSmartProImg from "../assets/images/course-smartpro.jpg";
@@ -36,8 +36,8 @@ const Courses = () => {
       />
 
       {/* Popular Courses */}
-      <section className="mt-12 text-gray-900">
-        <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <section className="mt-16 text-gray-900">
+        <div className="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-lg text-center">
             <h2 className="text-3xl font-medium capitalize sm:text-4xl">
               most chosen courses
@@ -88,35 +88,11 @@ const Courses = () => {
               </div>
             ))}
           </div>
-
-          <div className="mt-8 text-center">
-            <Link
-              reloadDocument
-              className="feature-btn mt-5 inline-flex items-center rounded bg-aptechRed px-6 py-3 text-white hover:shadow-md"
-              to="/courses"
-            >
-              <span className="text-sm font-semibold"> View Courses </span>
-              <svg
-                className="ml-2 h-5 w-5"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </svg>
-            </Link>
-          </div>
         </div>
       </section>
 
-      {/* Popular Courses */}
-      <section className="mt- text-gray-900">
+      {/* Short Time Courses */}
+      <section className=" text-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-lg text-center">
             <h2 className="text-3xl font-medium capitalize sm:text-4xl">
@@ -124,7 +100,8 @@ const Courses = () => {
             </h2>
 
             <p className="mt-1 text-gray-600">
-              Our short time courses are designed to help you achieve so much within a short period
+              Our short time courses are designed to help you achieve so much
+              within a short period
             </p>
           </div>
         </div>

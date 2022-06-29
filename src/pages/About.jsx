@@ -2,7 +2,7 @@ import React from "react";
 import AdvertImg1 from "../assets/images/advert1.jpg";
 import BusinessTeamImg from "../assets/images/office-workers.jpg";
 import StudentsImg from "../assets/images/students1.jpg";
-import {IntroBanner} from "../partials/IntroBanner";
+import { IntroBanner } from "../partials/pageBanners";
 
 const About = () => {
   return (
