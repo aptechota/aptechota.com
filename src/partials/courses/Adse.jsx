@@ -238,9 +238,7 @@ const Adse = () => {
               course structure
             </h2>
 
-            <p className="mt-1 text-gray-600">
-              A few of our most popular courses
-            </p>
+            <p className="mt-1 text-gray-600">A preview of what you'll gain</p>
           </div>
         </div>
 
