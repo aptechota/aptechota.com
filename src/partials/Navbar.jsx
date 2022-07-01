@@ -8,34 +8,37 @@ const Nav = () => {
     <Navbar
       fluid={false}
       rounded={false}
-      menuOpen={false}
-      className=" fixed top-0 z-50 w-full bg-gray-200 shadow-sm sm:bg-white/95 sm:backdrop-blur-sm"
+      menuOpen={true}
+      className="fixed top-0 z-50 w-full bg-gray-50 shadow-sm sm:bg-white/95 sm:backdrop-blur-sm"
     >
       <Navbar.Brand href="/">
         <img
           src={AptechLogo}
-          className="pointer-events-none mr-3 h-6 sm:h-12"
+          className="pointer-events-none mr-3 h-10 sm:h-12"
           alt="Flowbite Logo"
         />
       </Navbar.Brand>
-      <Navbar.Toggle className="" color="red" />
-      <Navbar.Collapse className="items-center gap-2 space-y-5">
+      <Navbar.Toggle />
+      <Navbar.Collapse className="items-center sm:gap-2 sm:space-y-5">
         <NavLink
           to="/"
           className={({ isActive }) =>
-            isActive ? "text-aptechRed" : "inactive"
+            isActive
+              ? "mx-auto my-1 w-fit text-aptechRed"
+              : "inactive mx-auto my-1 w-fit"
           }
           reloadDocument
         >
-          <span className="navlink rounded-md font-bold hover:text-aptechRed">
+          <span className="navlink rounded-md font-bold hover:text-aptechRed ">
             Home
           </span>
         </NavLink>
-
         <NavLink
           to="/about"
           className={({ isActive }) =>
-            isActive ? "text-aptechRed" : "inactive"
+            isActive
+              ? "mx-auto my-1 w-fit text-aptechRed"
+              : "inactive mx-auto my-1 w-fit"
           }
           reloadDocument
         >
@@ -46,7 +49,9 @@ const Nav = () => {
         <NavLink
           to="/courses"
           className={({ isActive }) =>
-            isActive ? "text-aptechRed" : "inactive"
+            isActive
+              ? "mx-auto my-1 w-fit text-aptechRed"
+              : "inactive mx-auto my-1 w-fit"
           }
           reloadDocument
         >
@@ -57,7 +62,9 @@ const Nav = () => {
         <NavLink
           to="/contact"
           className={({ isActive }) =>
-            isActive ? "text-aptechRed" : "inactive"
+            isActive
+              ? "mx-auto my-1 w-fit text-aptechRed"
+              : "inactive mx-auto my-1 w-fit"
           }
           reloadDocument
         >

@@ -34,7 +34,7 @@ a {
 
 /* Navbar */
 .navlink {
-  @apply text-md;
+  @apply text-[16px] sm:text-md;
 }
 
 /* 

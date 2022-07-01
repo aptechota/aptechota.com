@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import "animate.css/animate.css";
+import "animate.css/animate.min.css";
 
 import Nav from "./partials/Navbar";
 import Footer from "./partials/Footer";
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App ">
       <Nav />
-      <div className="mt-16">
+      <div className="mt-12 sm:mt-16">
         <Routes forceRefresh>
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

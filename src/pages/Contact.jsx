@@ -7,9 +7,6 @@ import { TextInput, Textarea } from "flowbite-react";
 import { CgProfile } from "react-icons/cg";
 import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
-import ScrollReveal from "scrollreveal";
-
-
 
 const Contact = () => {
   const form = useRef();
@@ -49,7 +46,7 @@ const Contact = () => {
       {/* Details Section */}
       <div className="container mx-auto mt-28 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         {/* Email */}
-        <div className="relative detail-block block p-8 text-center">
+        <div className="detail-block relative block p-8 text-center">
           <div className="text-gray-600">
             <div className="mx-auto w-fit rounded-lg bg-gray-100 p-2">
               <svg
