@@ -1,11 +1,13 @@
 import React from "react";
 import { CourseBanner } from "../pageBanners";
+import { BsDash } from "react-icons/bs";
+import Rosa from "react-on-scroll-animation";
+
 import FlutterImg from "../../assets/images/smart-pro-flutter.png";
 import EthicalHackingImg from "../../assets/images/smart-pro-ethical-hacking.jpg";
 import WebWithPythonImg from "../../assets/images/smart-pro-django.jpg";
 import WebWithPhpImg from "../../assets/images/smart-pro-php.png";
 import DataScienceImg from "../../assets/images/smart-pro-data-science.jpg";
-import { BsDash } from "react-icons/bs";
 
 const courseAcronym = "Smart Pro";
 const courseName = "Aptech Smart Professional Courses";
@@ -81,11 +83,13 @@ const SmartPro = () => {
               </div>
 
               <div className="lg:py-16">
-                <h2 className="text-2xl font-semibold capitalize sm:text-3xl">
-                  Smart Professional
-                  <BsDash className="mb-1 inline text-aptechRed" />
-                  {course.name}
-                </h2>
+                <Rosa animation={"fade-up"} once>
+                  <h2 className="text-2xl font-semibold capitalize sm:text-3xl">
+                    Smart Professional
+                    <BsDash className="mb-1 inline text-aptechRed" />
+                    {course.name}
+                  </h2>
+                </Rosa>
 
                 <p className="mt-2 text-justify text-gray-600 md:text-start">
                   {course.description}

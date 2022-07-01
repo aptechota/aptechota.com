@@ -3,11 +3,9 @@
 @tailwind utilities;
 
 /* 
-
 font-family: 'Cambay', sans-serif;
 font-family: 'Jost', sans-serif;
 font-family: 'Mulish', sans-serif;
-
 */
 
 :root {
@@ -31,6 +29,7 @@ a {
   font-family: "Mulish", sans-serif;
   /* font-family: 'Cambay', sans-serif; */
 }
+/* Global Styles */
 
 /* Navbar */
 .navlink {
@@ -80,7 +79,7 @@ a {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.feature-btn svg {
+.feature-btn svg, .download-btn svg {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
@@ -95,6 +94,13 @@ a {
   transition-duration: 100ms;
 }
 
+.download-btn:hover svg {
+  transform: translateY(4px);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 100ms;
+}
 /* Home popular Courses */
 .swiper-container {
   overflow: hidden;

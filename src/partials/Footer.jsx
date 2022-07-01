@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ImWhatsapp } from "react-icons/im";
-import { SiFacebook, SiInstagram, SiReact } from "react-icons/si";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 import AptechLogo from "../assets/images/aptech-logo.png";
+
+const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
@@ -143,27 +145,8 @@ const Footer = () => {
 
         <div className="mt-8 border-t border-white/10 pt-3">
           <p className="text-center text-xs leading-relaxed text-gray-300">
-            © Company <span id="year">2022</span>. All rights reserved.
+            © Aptech Ota <span>{currentYear}</span>. All rights reserved.
             <br />
-            Created with{" "}
-            <a
-              href="https://reactjs.org/"
-              target="_blank"
-              rel="noreferrer"
-              className="underline transition hover:text-white"
-            >
-              <SiReact className="mx-1 inline h-4 w-4" />
-            </a>{" "}
-            by{"  "}
-            <a
-              href="https://israelakinoso.netlify.app/"
-              target="_blank"
-              className="underline transition hover:text-white"
-              rel="noreferrer"
-            >
-              Israel
-            </a>
-            .
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import { Link } from "react-router-dom";
+import Rosa from "react-on-scroll-animation";
 
 import jumboImg from "../assets/images/jumboImg.jpg";
 import coursesAcnsImg from "../assets/images/course-acns.jpg";
@@ -14,6 +15,8 @@ const Home = () => {
     {
       id: 1,
       title: "aptech's certificates enjoy global recognition",
+      animation: "fade-up",
+      delay: 0,
       description:
         "Aptech’s courses lead to professional I.T. certifications from leading I.Tbrands such as Microsoft and from Aptech itself.Each course includes classroom learning as well as practical sessions in the lab. Students are given optimum time in the lab and can work on their projects/assignments whenever they wish.",
       svg: (
@@ -38,6 +41,8 @@ const Home = () => {
     {
       id: 2,
       title: "our interntional education alliances",
+      animation: "fade-up",
+      delay: 300,
       description:
         "Aptech has alliance with the best international Universities and institutes across the globe to benefit Aptech students. It helps students pursue an international ICT degree staying in Nigeria or at our partner universities in UK, Australia, Dubai, Malta, Ireland or Malaysia. Get set and register with Aptech, Enquire now!",
       svg: (
@@ -60,6 +65,8 @@ const Home = () => {
     {
       id: 3,
       title: "aptech's mission",
+      animation: "fade-up",
+      delay: 700,
       description:
         "I.T. is an empowering tool, which when appropriately utilized, leads to an increase in productivity improvements and prosperity at the individual, organizational, societal, national and global levels. Education is also an enabler, which leads to continued improvement in productivity and prosperity.",
       svg: (
@@ -85,18 +92,24 @@ const Home = () => {
       id: 1,
       title: "aptech ACNS career courses",
       img: coursesAcnsImg,
+      delay: 100,
+      animation: "fade-up",
       link: "acns",
     },
     {
       id: 2,
       title: "advanced diploma in software engineering (ADSE)",
       img: coursesAdseImg,
+      delay: 400,
+      animation: "fade-up",
       link: "adse",
     },
     {
       id: 3,
       title: "aptech smart professional courses",
       img: coursesSmartProImg,
+      delay: 800,
+      animation: "fade-up",
       link: "smart-pro",
     },
   ];
@@ -134,29 +147,39 @@ const Home = () => {
       </div>
 
       {/* Why Choose Us */}
-      <div className="mt-20">
-        <div className="container mx-auto p-2 text-center capitalize">
-          <h1 className="text-3xl font-semibold sm:text-4xl">why choose us?</h1>
-          <p className="mt-2 font-medium normal-case text-gray-600">
-            Here are a few reasons why you should choose Aptech
-          </p>
-        </div>
-        <div className="mx-auto max-w-screen-xl px-4 py-2 sm:px-6 lg:px-8">
+      <div className="mt-28">
+        <Rosa animation={"fade-down"} once>
+          <div className="container mx-auto p-2 text-center capitalize">
+            <h1 className="text-3xl font-semibold sm:text-4xl">
+              why choose us?
+            </h1>
+            <p className="mt-2 font-medium normal-case text-gray-600">
+              Here are a few reasons why you should choose Aptech
+            </p>
+          </div>
+        </Rosa>
+        <div className="mx-auto mt-10 max-w-screen-xl px-4 py-2 sm:px-6 lg:px-8">
           <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature) => (
-              <div
-                key={feature.id}
-                className="features block rounded-lg p-6 text-center"
+              <Rosa
+                animation={feature.animation}
+                delay={feature.delay}
+                once={"false"}
               >
-                {feature.svg}
-                <h3 className="mt-4 text-xl font-bold capitalize text-black">
-                  {feature.title}
-                </h3>
+                <div
+                  key={feature.id}
+                  className="features block rounded-lg p-6 text-center"
+                >
+                  {feature.svg}
+                  <h3 className="mt-4 text-xl font-bold capitalize text-black">
+                    {feature.title}
+                  </h3>
 
-                <p className="mt-2 text-sm text-gray-500">
-                  {feature.description}
-                </p>
-              </div>
+                  <p className="mt-2 text-sm text-gray-500">
+                    {feature.description}
+                  </p>
+                </div>
+              </Rosa>
             ))}
           </div>
 
@@ -198,44 +221,46 @@ const Home = () => {
               />
             </div>
 
-            <div className="lg:py-24">
-              <h2 className="text-3xl font-semibold sm:text-4xl">
-                Why should I enroll?
-              </h2>
+            <Rosa duration={500} animation={"zoom-in"} once>
+              <div className="lg:py-24">
+                <h2 className="text-3xl font-semibold sm:text-4xl">
+                  Why should I enroll?
+                </h2>
 
-              <p className="mt-4 text-gray-300">
-                A career in programming is actually possible whether you are old
-                or young, male or female and one of the very best reasons to
-                become a computer programmer is the bounty of jobs out there.
-                And because we are an increasingly technologically reliant
-                society it is also apparent that there will be jobs in the
-                programming sector for a long time to come. As other industries
-                decline and cease to be, programming is growing and expanding
-                into almost all areas of life.
-              </p>
+                <p className="mt-4 text-gray-300">
+                  A career in programming is actually possible whether you are
+                  old or young, male or female and one of the very best reasons
+                  to become a computer programmer is the bounty of jobs out
+                  there. And because we are an increasingly technologically
+                  reliant society it is also apparent that there will be jobs in
+                  the programming sector for a long time to come. As other
+                  industries decline and cease to be, programming is growing and
+                  expanding into almost all areas of life.
+                </p>
 
-              <a
-                className="feature-btn mt-6 inline-flex items-center rounded bg-aptechOrange px-6 py-3 text-black hover:shadow-sm hover:shadow-gray-50"
-                href="/contact"
-              >
-                <span className="text-sm font-bold"> Enroll Now </span>
-
-                <svg
-                  className="ml-2 h-5 w-5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                <a
+                  className="feature-btn mt-6 inline-flex items-center rounded bg-aptechOrange px-6 py-3 text-black hover:shadow-sm hover:shadow-gray-50"
+                  href="/contact"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-            </div>
+                  <span className="text-sm font-bold"> Enroll Now </span>
+
+                  <svg
+                    className="ml-2 h-5 w-5"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </Rosa>
           </div>
         </div>
       </section>
@@ -243,54 +268,61 @@ const Home = () => {
       {/* Popular Courses */}
       <section className="mt-12 text-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-lg text-center">
-            <h2 className="text-3xl font-medium capitalize sm:text-4xl">
-              most chosen courses
-            </h2>
+          <Rosa animation={"fade-down"} once>
+            <div className="mx-auto max-w-lg text-center">
+              <h2 className="text-3xl font-medium capitalize sm:text-4xl">
+                most chosen courses
+              </h2>
 
-            <p className="mt-1 text-gray-600">
-              A few of our most popular courses
-            </p>
-          </div>
-
+              <p className="mt-1 text-gray-600">
+                A few of our most popular courses
+              </p>
+            </div>
+          </Rosa>
           <div className="container mx-auto mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
             {popularCourses.map((course) => (
-              <div
-                key={course.id}
-                className="relative block h-[45vh] overflow-hidden rounded-md bg-cover bg-center bg-no-repeat md:h-[70vh]"
-                style={{
-                  backgroundImage: `linear-gradient(62deg,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0.2) 50%),url(${course.img})`,
-                }}
+              <Rosa
+                animation={course.animation}
+                delay={course.delay}
+                once={"false"}
               >
-                <Link
-                  reloadDocument
-                  to={`/courses/${course.link}`}
-                  className="absolute right-4 top-4 z-10 inline-flex items-center rounded-full bg-black px-3 py-1 text-xs font-semibold text-white"
+                <div
+                  key={course.id}
+                  className="relative block h-[45vh] overflow-hidden rounded-md bg-cover bg-center bg-no-repeat md:h-[60vh]"
+                  style={{
+                    backgroundImage: `linear-gradient(62deg,rgba(0, 0, 0, 0.2) 50%,rgba(0, 0, 0, 0.2) 50%),url(${course.img})`,
+                  }}
                 >
-                  Read More
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="ml-1.5 h-4 w-4 font-bold text-aptechOrange"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
+                  <Link
+                    reloadDocument
+                    to={`/courses/${course.link}`}
+                    className="absolute right-4 top-4 z-10 inline-flex items-center rounded-full bg-black px-3 py-1 text-xs font-semibold text-white"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                    />
-                  </svg>
-                </Link>
+                    Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="ml-1.5 h-4 w-4 font-bold text-aptechOrange"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                      />
+                    </svg>
+                  </Link>
 
-                <div className="relative h-full bg-black bg-opacity-40 p-8 pt-40 text-center text-white">
-                  <h5 className="text-2xl font-semibold capitalize">
-                    {course.title}
-                  </h5>
-                  {/* <p className="text-sm">Italy</p> */}
+                  <div className="relative h-full bg-black bg-opacity-40 p-8 pt-40 text-center text-white">
+                    <h5 className="text-2xl font-semibold capitalize">
+                      {course.title}
+                    </h5>
+                    {/* <p className="text-sm">Italy</p> */}
+                  </div>
                 </div>
-              </div>
+              </Rosa>
             ))}
           </div>
 
@@ -322,13 +354,15 @@ const Home = () => {
 
       {/* Testimonials */}
       <div className="mx-auto mt-5 bg-gray-800 py-10">
-        <div className="mx-auto mb-12 max-w-lg text-center">
-          <h2 className="text-3xl font-medium capitalize text-white sm:text-4xl">
-            testimonials
-          </h2>
+        <Rosa animation={"fade-down"} once>
+          <div className="mx-auto mb-12 max-w-lg text-center">
+            <h2 className="text-3xl font-medium capitalize text-white sm:text-4xl">
+              testimonials
+            </h2>
 
-          <p className="text-gray-300">What our students say about us</p>
-        </div>
+            <p className="text-gray-300">What our students say about us</p>
+          </div>
+        </Rosa>
         <Testimonials />
       </div>
 
@@ -346,7 +380,11 @@ const Home = () => {
 
       {/* Future Programs */}
       <div className="container mx-auto mt-20 p-2 text-center capitalize">
-        <h1 className="text-2xl font-semibold sm:text-3xl">future programs</h1>
+        <Rosa animation={"fade-down"} once>
+          <h1 className="text-2xl font-semibold sm:text-3xl">
+            future programs
+          </h1>
+        </Rosa>
         <p className="mx-auto mt-2 w-5/6 font-medium  normal-case text-gray-600 sm:w-4/6">
           For the first time Aptech is launching futuristic cutting-edge Digital
           Transformation Programs which include some of the Newest, Fastest

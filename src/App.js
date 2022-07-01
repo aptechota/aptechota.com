@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import "animate.css/animate.min.css";
+import "react-on-scroll-animation/build/index.css";
 
 import Nav from "./partials/Navbar";
 import Footer from "./partials/Footer";
@@ -29,7 +30,6 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </div>
-
       <Footer />
     </div>
   );

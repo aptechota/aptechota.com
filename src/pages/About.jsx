@@ -1,9 +1,10 @@
 import React from "react";
+import { IntroBanner } from "../partials/pageBanners";
+import Rosa from "react-on-scroll-animation";
+
 import AdvertImg1 from "../assets/images/advert1.jpg";
 import BusinessTeamImg from "../assets/images/office-workers.jpg";
 import StudentsImg from "../assets/images/students1.jpg";
-import { IntroBanner } from "../partials/pageBanners";
-
 const About = () => {
   return (
     <div>
@@ -32,10 +33,11 @@ const About = () => {
               <span className="hidden lg:absolute lg:inset-y-0 lg:-left-16 lg:block lg:w-16 lg:bg-gray-100"></span>
 
               <div className="p-8 sm:p-16 ">
-                <h2 className="text-2xl font-semibold text-aptechRed sm:text-3xl">
-                  About Us
-                </h2>
-
+                <Rosa animation={"fade-down"} once>
+                  <h2 className="text-2xl font-semibold text-aptechRed sm:text-3xl">
+                    About Us
+                  </h2>
+                </Rosa>
                 <p className="mt-4 text-justify text-gray-700">
                   Aptech Computer Education, Sango Ota, Ogun State came into
                   being when Avigo Investment acquired the ICT Educational
@@ -69,9 +71,11 @@ const About = () => {
             </div>
 
             <div className="lg:py-16">
-              <h2 className="text-2xl font-semibold capitalize text-aptechRed sm:text-3xl">
-                avigo investment limited
-              </h2>
+              <Rosa animation={"fade-down"} once>
+                <h2 className="text-2xl font-semibold capitalize text-aptechRed sm:text-3xl">
+                  avigo investment limited
+                </h2>
+              </Rosa>
               <p className="mt-2 text-justify text-gray-700">
                 AVIGO, is an indigenous firm, which is one of the most effective
                 environmental and allied services company in Nigeria, it was
@@ -103,10 +107,11 @@ const About = () => {
             </div>
 
             <div className="lg:py-12">
-              <h2 className="text-2xl font-semibold text-aptechRed sm:text-3xl">
-                Our Alliances
-              </h2>
-
+              <Rosa animation={"fade-down"} once>
+                <h2 className="text-2xl font-semibold text-aptechRed sm:text-3xl">
+                  Our Alliances
+                </h2>
+              </Rosa>
               <p className="mt-2 text-justify text-gray-700">
                 <span className="text-justify font-bold">
                   Avigo inculcates strict adherence to policies, procedures and

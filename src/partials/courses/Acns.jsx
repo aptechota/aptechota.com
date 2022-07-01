@@ -3,6 +3,7 @@ import { CourseBanner } from "../pageBanners";
 import ACNSImg from "../../assets/images/acns.jpg";
 import { TbZoomIn } from "react-icons/tb";
 import { AcnsModal1, AcnsModal2 } from "../modals/AcnsModals";
+import Rosa from "react-on-scroll-animation";
 
 const courseAcronym = "ACNS";
 const courseName = "Aptech Certified Network Specialist";
@@ -55,10 +56,11 @@ const Acns = () => {
             </div>
 
             <div className="lg:py-20">
-              <h2 className="text-3xl font-semibold capitalize sm:text-4xl">
-                About ACNS
-              </h2>
-
+              <Rosa animation={"fade-down"} once>
+                <h2 className="text-3xl font-semibold capitalize sm:text-4xl">
+                  About ACNS
+                </h2>
+              </Rosa>
               <p className="mt-2 text-justify text-gray-600 md:text-start">
                 ACNS is the leading Networking Career Course from Aptech. It is
                 an hardware, networking system administrator and a database
@@ -104,62 +106,69 @@ const Acns = () => {
       {/* Course Structure */}
       <section className="mt-12 text-gray-900">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-lg text-center">
-            <h2 className="text-2xl font-medium capitalize sm:text-3xl">
-              course structure
-            </h2>
+          <Rosa animation={"fade-up"} once>
+            <div className="mx-auto max-w-lg text-center">
+              <h2 className="text-2xl font-medium capitalize sm:text-3xl">
+                course structure
+              </h2>
 
-            <p className="mt-1 text-gray-600">A preview of what you'll gain</p>
-          </div>
+              <p className="mt-1 text-gray-600">
+                A preview of what you'll gain
+              </p>
+            </div>
+          </Rosa>
         </div>
 
         <div className="mx-auto p-5 sm:container">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
             {/* First */}
-            <div className="">
-              <div className="group relative block bg-black ">
-                <img
-                  className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-80  transition-opacity group-hover:opacity-50"
-                  src={courses.find((course) => course.id === 1).courseImg}
-                  alt="Course"
-                />
-                <div className="grid place-content-center p-4">
-                  <div className="my-28">
-                    <div className="transform opacity-0 transition-all  group-hover:translate-y-0 group-hover:opacity-100">
-                      <p
-                        className="cursor-pointer text-sm text-white"
-                        onClick={showModal}
-                      >
-                        <TbZoomIn className="h-8 w-8" />
-                      </p>
+            <Rosa animation={"fade-up"} once>
+              <div className="">
+                <div className="group relative block bg-black ">
+                  <img
+                    className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-80  transition-opacity group-hover:opacity-50"
+                    src={courses.find((course) => course.id === 1).courseImg}
+                    alt="Course"
+                  />
+                  <div className="grid place-content-center p-4">
+                    <div className="my-28">
+                      <div className="transform opacity-0 transition-all  group-hover:translate-y-0 group-hover:opacity-100">
+                        <p
+                          className="cursor-pointer text-sm text-white"
+                          onClick={showModal}
+                        >
+                          <TbZoomIn className="h-8 w-8" />
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-
+            </Rosa>
             {/* Second */}
-            <div className="">
-              <div className="group relative block bg-black ">
-                <img
-                  className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-80  transition-opacity group-hover:opacity-50"
-                  src={courses.find((course) => course.id === 2).courseImg}
-                  alt=""
-                />
-                <div className="grid place-content-center p-4">
-                  <div className="my-28">
-                    <div className="transform opacity-0 transition-all  group-hover:translate-y-0 group-hover:opacity-100">
-                      <p
-                        className="cursor-pointer text-sm text-white"
-                        onClick={showModal2}
-                      >
-                        <TbZoomIn className="h-8 w-8" />
-                      </p>
+            <Rosa animation={"fade-up"} delay={300} once>
+              <div className="">
+                <div className="group relative block bg-black ">
+                  <img
+                    className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-80  transition-opacity group-hover:opacity-50"
+                    src={courses.find((course) => course.id === 2).courseImg}
+                    alt=""
+                  />
+                  <div className="grid place-content-center p-4">
+                    <div className="my-28">
+                      <div className="transform opacity-0 transition-all  group-hover:translate-y-0 group-hover:opacity-100">
+                        <p
+                          className="cursor-pointer text-sm text-white"
+                          onClick={showModal2}
+                        >
+                          <TbZoomIn className="h-8 w-8" />
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Rosa>
           </div>
         </div>
       </section>
