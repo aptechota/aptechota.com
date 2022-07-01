@@ -2,7 +2,7 @@ import React from "react";
 import { IntroBanner } from "../partials/pageBanners";
 import Rosa from "react-on-scroll-animation";
 
-import AdvertImg1 from "../assets/images/advert1.jpg";
+import AdvertImg1 from "../assets/images/advert1Img.jpg";
 import BusinessTeamImg from "../assets/images/office-workers.jpg";
 import StudentsImg from "../assets/images/students1.jpg";
 const About = () => {
