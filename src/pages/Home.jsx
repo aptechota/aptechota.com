@@ -3,12 +3,13 @@ import { Carousel } from "flowbite-react";
 import { Link } from "react-router-dom";
 import Rosa from "react-on-scroll-animation";
 
-import jumboImg from "../assets/images/jumboImg.jpg";
+import jumboImg from "../assets/images/enroll-section.jpeg";
 import coursesAcnsImg from "../assets/images/course-acns.jpg";
 import coursesAdseImg from "../assets/images/course-adse.jpg";
 import coursesSmartProImg from "../assets/images/course-smartpro.jpg";
 import SchoolsBanner from "../assets/images/schools-banner.png";
 import Testimonials from "../partials/Testimonials";
+
 
 const Home = () => {
   const features = [
@@ -222,7 +223,7 @@ const Home = () => {
             </div>
 
             <Rosa duration={500} animation={"zoom-in"} once>
-              <div className="lg:py-24">
+              <div className="lg:py-16">
                 <h2 className="text-3xl font-semibold sm:text-4xl">
                   Why should I enroll?
                 </h2>

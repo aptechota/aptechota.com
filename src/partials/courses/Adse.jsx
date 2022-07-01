@@ -16,7 +16,7 @@ import {
   AdseModal11,
 } from "../modals/AdseModals";
 import Rosa from "react-on-scroll-animation";
-import FullBrochureImg from "../../assets/images/adse-courses/full-brochure.jpg";
+import FullBrochureImg from "../../assets/images/adse-courses/full-brochure-adse.jpg";
 
 import Sem1Img from "../../assets/images/adse-courses/sem1.jpg";
 import Sem2Img from "../../assets/images/adse-courses/sem2.jpg";
@@ -536,7 +536,7 @@ const Adse = () => {
           href={FullBrochureImg}
           target="_blank"
           rel="noopener noreferrer"
-          download="Full_Brochure"
+          download="Full_ADSE_Brochure"
         >
           <span className="text-sm font-semibold">Download Full Brochure</span>
 

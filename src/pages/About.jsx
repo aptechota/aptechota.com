@@ -3,7 +3,7 @@ import { IntroBanner } from "../partials/pageBanners";
 import Rosa from "react-on-scroll-animation";
 
 import AdvertImg1 from "../assets/images/advert1Img.jpg";
-import BusinessTeamImg from "../assets/images/office-workers.jpg";
+import OfficeImg from "../assets/images/office3.jpeg";
 import StudentsImg from "../assets/images/students1.jpg";
 const About = () => {
   return (
@@ -65,7 +65,7 @@ const About = () => {
             <div className="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <img
                 className="pointer-events-none absolute inset-0 h-full w-full object-cover"
-                src={BusinessTeamImg}
+                src={OfficeImg}
                 alt="Business Team"
               />
             </div>

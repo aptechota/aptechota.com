@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import coursesAcnsImg from "../assets/images/course-acns.jpg";
 import coursesAdseImg from "../assets/images/course-adse.jpg";
 import coursesSmartProImg from "../assets/images/course-smartpro.jpg";
+import FullShortTimeBrochureImg from "../assets/images/full-brochure-short-time.jpeg";
 import Rosa from "react-on-scroll-animation";
 // Short Time Course Images
 import MSOfficeImg from "../assets/images/short-time/short-time-ms-office.png";
@@ -292,6 +293,34 @@ const Courses = () => {
       </section>
 
       <p className="text-center text-lg">And many more courses ....</p>
+
+      {/* Download Course Brochure */}
+      <div className="mt-4 text-center">
+        <a
+          className="download-btn mt-5 inline-flex items-center rounded bg-green-700 px-6 py-3 text-white hover:shadow-md"
+          href={FullShortTimeBrochureImg}
+          target="_blank"
+          rel="noopener noreferrer"
+          download="Full_Short_Time_Brochure"
+        >
+          <span className="text-sm font-semibold">Download Full Brochure</span>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="ml-2 h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+            />
+          </svg>
+        </a>
+      </div>
 
       <div className="mt-2 text-center">
         <a
