@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { IntroBanner } from "../partials/pageBanners";
 import { Link } from "react-router-dom";
 
@@ -22,6 +22,9 @@ import JavaProgImg from "../assets/images/short-time/short-time-java.jpg";
 import AndroidAppDevImg from "../assets/images/short-time/short-time-android.jpg";
 
 const Courses = () => {
+  useEffect(() => {
+    document.title = "Courses || Aptech Computer Education, Ota, Ogun State";
+  })
   const popularCourses = [
     {
       id: 1,

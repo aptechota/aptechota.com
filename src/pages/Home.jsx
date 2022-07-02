@@ -11,7 +11,7 @@ import SchoolsBanner from "../assets/images/schools-banner.png";
 import Testimonials from "../partials/Testimonials";
 
 
-const Home = () => {
+const Home = () => {  
   const features = [
     {
       id: 1,

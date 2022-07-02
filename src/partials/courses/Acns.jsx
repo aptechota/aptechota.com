@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { CourseBanner } from "../pageBanners";
 import ACNSImg from "../../assets/images/acns.jpg";
 import { TbZoomIn } from "react-icons/tb";
@@ -11,6 +11,9 @@ const courseAcronym = "ACNS";
 const courseName = "Aptech Certified Network Specialist";
 
 const Acns = () => {
+  useEffect(() => {
+    document.title = "Courses - ACNS || Aptech Computer Education, Ota, Ogun State";
+  })
   // Modal 1
   const [isOpen, setIsOpen] = useState(false);
   const showModal = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { CourseBanner } from "../pageBanners";
 import { BsDash } from "react-icons/bs";
 import Rosa from "react-on-scroll-animation";
@@ -13,6 +13,9 @@ const courseAcronym = "Smart Pro";
 const courseName = "Aptech Smart Professional Courses";
 
 const SmartPro = () => {
+  useEffect(() => {
+    document.title = "Courses - Smart Professional || Aptech Computer Education, Ota, Ogun State";
+  })
   const courses = [
     {
       id: 1,
