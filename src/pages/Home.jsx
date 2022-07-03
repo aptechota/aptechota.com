@@ -11,7 +11,7 @@ import SchoolsBanner from "../assets/images/schools-banner.png";
 import Testimonials from "../partials/Testimonials";
 
 
-const Home = () => {  
+const Home = () => {
   const features = [
     {
       id: 1,
@@ -120,7 +120,7 @@ const Home = () => {
       <div className="h-[70vh] sm:h-[85vh]">
         <Carousel
           slideInterval={10000}
-          slide={false}
+          slide={true}
           rightControl=" "
           leftControl=" "
         >

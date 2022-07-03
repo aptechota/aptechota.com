@@ -8,7 +8,7 @@ const Nav = () => {
     <Navbar
       fluid={false}
       rounded={false}
-      menuOpen={true}
+      menuOpen={false}
       className="fixed top-0 z-50 w-full bg-gray-50 shadow sm:bg-white/95 sm:backdrop-blur-sm"
     >
       <Navbar.Brand href="/">
