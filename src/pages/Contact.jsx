@@ -247,7 +247,7 @@ const Contact = () => {
                 </svg>
               </button>
             </div>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} netlify>
               {/* FullName */}
               <div className="mb-4">
                 <TextInput
