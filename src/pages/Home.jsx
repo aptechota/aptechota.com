@@ -127,19 +127,19 @@ const Home = () => {
           <div className="slide1 flex h-full cursor-default items-center justify-center capitalize text-white">
             <h1 className="animate__animated animate__fadeInUp text-center text-3xl font-medium sm:text-5xl">
               Build your IT career{" "}
-              <span className="font-semibold text-aptechOrange">with us</span>
+              <span className="text-aptechOrange font-jost">with us</span>
             </h1>
           </div>
           <div className="slide2 flex h-full cursor-default items-center justify-center capitalize text-white">
             <h1 className="text-center text-3xl font-medium sm:text-5xl">
               Get the right{" "}
-              <span className="font-semibold text-aptechOrange ">skills</span>
+              <span className="text-aptechOrange font-jost">skills</span>
             </h1>
           </div>
           <div className="slide3 flex h-full cursor-default items-center justify-center capitalize text-white">
             <h1 className="text-center text-3xl font-medium sm:text-5xl">
               Enjoy Global{" "}
-              <span className="font-semibold text-aptechOrange">
+              <span className="text-aptechOrange font-jost">
                 Recognition
               </span>
             </h1>

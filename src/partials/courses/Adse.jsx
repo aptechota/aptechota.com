@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { CourseBanner } from "../pageBanners";
 import ADSEImg from "../../assets/images/adse.jpg";
 import { TbZoomIn } from "react-icons/tb";
@@ -32,10 +32,7 @@ import Sem4gImg from "../../assets/images/adse-courses/sem4g.jpg";
 
 const courseAcronym = "ADSE";
 const courseName = "Advanced Diploma in Software Engineering";
-const Adse = () => {
-  useEffect(() => {
-    document.title = "Courses - ADSE || Aptech Computer Education, Ota, Ogun State";
-  })
+const Adse = () => {  
   // Modal 1
   const [isOpen, setIsOpen] = useState(false);
   const showModal = () => {

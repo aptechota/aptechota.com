@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { CourseBanner } from "../pageBanners";
 import { BsDash } from "react-icons/bs";
 import Rosa from "react-on-scroll-animation";
@@ -12,10 +12,7 @@ import DataScienceImg from "../../assets/images/smart-pro-data-science.jpg";
 const courseAcronym = "Smart Pro";
 const courseName = "Aptech Smart Professional Courses";
 
-const SmartPro = () => {
-  useEffect(() => {
-    document.title = "Courses - Smart Professional || Aptech Computer Education, Ota, Ogun State";
-  })
+const SmartPro = () => {  
   const courses = [
     {
       id: 1,

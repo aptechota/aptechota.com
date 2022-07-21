@@ -1,14 +1,11 @@
-import React, {useEffect} from "react";
+import React from "react";
 import { IntroBanner } from "../partials/pageBanners";
 import Rosa from "react-on-scroll-animation";
 
 import AdvertImg1 from "../assets/images/advert1Img.jpg";
 import OfficeImg from "../assets/images/office3.jpeg";
 import StudentsImg from "../assets/images/students1.jpg";
-const About = () => {
-  useEffect(() => {
-    document.title = "About Us || Aptech Computer Education, Ota, Ogun State";
-  })
+const About = () => {  
   return (
     <div>
       {/* Intro Banner */}

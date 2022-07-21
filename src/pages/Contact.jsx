@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import { IntroBanner } from "../partials/pageBanners";
 import { SiFacebook, SiInstagram, SiWhatsapp } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
@@ -9,10 +9,7 @@ import toast from "react-hot-toast";
 import emailjs from "@emailjs/browser";
 import Rosa from "react-on-scroll-animation";
 
-const Contact = () => {
-  useEffect(() => {
-    document.title = "Contact Us || Aptech Computer Education, Ota, Ogun State";
-  })
+const Contact = () => {  
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
